@@ -1,0 +1,16 @@
+app:
+  build: app
+  ports:
+    - "3000:3000"
+  links:
+    - api
+api:
+  build: api
+  links:
+    - mongo
+mongo:
+  image: mongo:3.2
+  volumes:
+    - /usr/share/mongodb/db:/data/db
+  command: mongod --smallfiles
+  restart: always

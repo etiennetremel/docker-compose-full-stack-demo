@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Simple APP",
+  "main": "main.js",
+  "scripts": {
+    "start": "node --use_strict main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Etienne Tremel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-http-proxy": "^0.6.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "request": "^2.65.0"
+  }
+}

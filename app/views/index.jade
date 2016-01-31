@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    div
+      input#input-name(type="text" placeholder="Name")
+      button#btn-add-user Add
+    table#users
+      tbody
+        each user in users
+          tr(data-id=user._id)
+            td= user.name
+            td
+              button.btn-remove-user Remove
+
+    script(src="scripts.js")
+
