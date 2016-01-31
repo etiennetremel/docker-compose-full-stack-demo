@@ -20,7 +20,7 @@ The MongoDB database is hosted on your machine. You could also create an artifac
 
 Make sure you have Docker installed.
 
-If needed, change the MongoDB path from the docker-compose.yaml to the correct location, then:
+If needed, change the MongoDB path from the docker-compose.yaml to the correct location ```/usr/share/mongodb/db```, then:
 
 ```bash
 docker-compose up
